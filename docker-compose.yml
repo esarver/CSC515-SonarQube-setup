@@ -25,7 +25,7 @@ services:
       - postgresql_data:/var/lib/postgresql/data
   scanner:
     image: sonarsource/sonar-scanner-cli
-    env-file: .env
+    env_file: .env
     environment:
       SONAR_HOST_URL: http://sonarqube:9000
     volumes:
